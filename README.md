@@ -1,1 +1,1 @@
-Simple Shell | Unix Shell 
+Simpe Shell 
