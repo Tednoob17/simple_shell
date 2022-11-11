@@ -22,3 +22,9 @@ int interactive(info_t *info)
 			return (1);
 	return (0);
 }
+/**
+ *_isalpha - checks for alphabetic character
+ *@c: The character to input
+ *Return: 1 if c is alphabetic, 0 otherwise
+ */
+
