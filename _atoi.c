@@ -15,3 +15,4 @@ int interactive(info_t *info)
  * @delim: the delimeter string
  * Return: 1 if true, 0 if false
  */
+ int is_delim(char c, char *delim)
