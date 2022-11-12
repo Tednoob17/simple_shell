@@ -69,7 +69,7 @@ int _putfd(char c, int fd)
  *
  * Return: the number of chars put
  */
- int _putsfd(char *str, int fd)
+int _putsfd(char *str, int fd)
 {
 	int i = 0;
 
