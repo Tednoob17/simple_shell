@@ -15,7 +15,7 @@ int interactive(info_t *info)
  * @delim: the delimeter string
  * Return: 1 if true, 0 if false
  */
- int is_delim(char c, char *delim)
+int is_delim(char c, char *delim)
 {
 	while (*delim)
 		if (*delim++ == c)
@@ -63,4 +63,4 @@ int _atoi(char *s)
 		output = result;
 
 	return (output);
-} 
+}

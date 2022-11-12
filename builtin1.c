@@ -7,7 +7,7 @@
  *        constant function prototype.
  *  Return: Always 0
  */
- int _myhistory(info_t *info)
+int _myhistory(info_t *info)
 {
 	print_list(info->history);
 	return (0);
