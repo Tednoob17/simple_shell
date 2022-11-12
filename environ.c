@@ -51,3 +51,9 @@ int _mysetenv(info_t *info)
 		return (0);
 	return (1);
 }
+/**
+ * _myunsetenv - Remove an environment variable
+ * @info: Structure containing potential arguments. Used to maintain
+ *        constant function prototype.
+ *  Return: Always 0
+ */
