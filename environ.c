@@ -33,3 +33,10 @@ char *_getenv(info_t *info, const char *name)
 	}
 	return (NULL);
 }
+/**
+ * _mysetenv - Initialize a new environment variable,
+ *             or modify an existing one
+ * @info: Structure containing potential arguments. Used to maintain
+ *        constant function prototype.
+ *  Return: Always 0
+ */
