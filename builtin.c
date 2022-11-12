@@ -64,7 +64,8 @@ int _mycd(info_t *info)
 	}
 	else
 		chdir_ret = chdir(info->argv[1]);
-	
+	if (chdir_ret == -1)
+	{
 	
 	
 	
