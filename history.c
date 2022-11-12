@@ -100,3 +100,11 @@ int read_history(info_t *info)
 	return (info->histcount);
 }
 
+/**
+ * build_history_list - adds entry to a history linked list
+ * @info: Structure containing potential arguments. Used to maintain
+ * @buf: buffer
+ * @linecount: the history linecount, histcount
+ *
+ * Return: Always 0
+ */
