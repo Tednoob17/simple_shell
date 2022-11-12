@@ -83,3 +83,11 @@ int print_d(int input, int fd)
 
 	return (count);
 }
+/**
+ * convert_number - converter function, a clone of itoa
+ * @num: number
+ * @base: base
+ * @flags: argument flags
+ *
+ * Return: string
+ */
