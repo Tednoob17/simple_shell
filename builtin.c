@@ -85,6 +85,8 @@ int _mycd(info_t *info)
 int _myhelp(info_t *info)
 {
 	char **arg_array;
+
+	arg_array = info->argv;
 	
 	
 	
