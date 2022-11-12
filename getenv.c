@@ -39,4 +39,10 @@ int _unsetenv(info_t *info, char *var)
 			info->env_changed = delete_node_at_index(&(info->env), i);
 			i = 0;
 			node = info->env;
-			
+			continue;
+		}
+		node = node->next;
+		i++;
+	}
+	return (info->env_changed);
+}
