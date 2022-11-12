@@ -58,3 +58,10 @@ int _unsetenv(info_t *info, char *var)
  */
 int _setenv(info_t *info, char *var, char *value)
 {
+	char *buf = NULL;
+	list_t *node;
+	char *p;
+
+	if (!var || !value)
+		return (0);
+
