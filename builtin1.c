@@ -42,3 +42,17 @@ int unset_alias(info_t *info, char *str)
  *
  * Return: Always 0 on success, 1 on error
  */
+int set_alias(info_t *info, char *str)
+{
+	char *p;
+
+	p = _strchr(str, '=');
+	if (!p)
+		return (1);
+	if (!*++p)
+		return (unset_alias(info, str));
+
+	unset_alias(info, str);
+	return (add_node_end(&(info->alias), str, 0) == NULL);
+}
+
