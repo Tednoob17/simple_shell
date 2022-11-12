@@ -6,3 +6,5 @@
  *          constant function prototype.
  * Return: Always 0
  */
+char **get_environ(info_t *info)
+{
