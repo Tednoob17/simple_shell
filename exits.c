@@ -11,7 +11,7 @@ char *_strncpy(char *dest, char *src, int n)
 {
 	int i, j;
 	char *s = dest;
-	
+
 	i = 0;
 	while (src[i] != '\0' && i < n - 1)
 	{
@@ -37,7 +37,7 @@ char *_strncpy(char *dest, char *src, int n)
  *@n: the amount of bytes to be maximally used
  *Return: the concatenated string
  */
- char *_strncat(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	int i, j;
 	char *s = dest;
@@ -45,7 +45,7 @@ char *_strncpy(char *dest, char *src, int n)
 	i = 0;
 	j = 0;
 	while (dest[i] != '\0')
-			i++;
+		i++;
 
 
 	while (src[j] != '\0' && j < n)
@@ -58,3 +58,9 @@ char *_strncpy(char *dest, char *src, int n)
 		dest[i] = '\0';
 	return (s);
 }
+/**
+ **_strchr - locates a character in a string
+ *@s: the string to be parsed
+ *@c: the character to look for
+ *Return: (s) a pointer to the memory area s
+ */
