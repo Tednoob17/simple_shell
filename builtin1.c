@@ -65,3 +65,16 @@ int set_alias(info_t *info, char *str)
 {
 	char *p = NULL, *a = NULL;
 
+	if (node)
+	{
+		p = _strchr(node->str, '=');
+		for (a = node->str; a <= p; a++)
+			_putchar(*a);
+		_putchar('\'');
+		_puts(p + 1);
+		_puts("'\n");
+		return (0);
+	}
+	return (1);
+}
+
