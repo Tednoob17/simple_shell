@@ -6,7 +6,7 @@
  *          constant function prototype.
  *  Return: exits with a given exit status
  *         (0) if info.argv[0] != "exit"
- */ 
+ */
 int _myexit(info_t *info)
 {
 	int exitcheck;
@@ -34,12 +34,12 @@ int _myexit(info_t *info)
  * @info: Structure containing potential arguments. Used to maintain
  *          constant function prototype.
  *  Return: Always 0
- */ 
+ */
 int _mycd(info_t *info)
 {
 	char *s, *dir, buffer[1024];
 	int chdir_ret;
-	
+
 	s = getcwd(buffer, 1024);
 	if (!s)
 		_puts("TODO: >>getcwd failure emsg here<<\n");
@@ -96,4 +96,4 @@ int _myhelp(info_t *info)
 	if (0)
 		_puts(*arg_array); /* temp att_unused workaround */
 	return (0);
-}	
+}
