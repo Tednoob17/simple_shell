@@ -77,4 +77,9 @@ int set_alias(info_t *info, char *str)
 	}
 	return (1);
 }
-
+/**
+ * _myalias - mimics the alias builtin (man alias)
+ * @info: Structure containing potential arguments. Used to maintain
+ *          constant function prototype.
+ *  Return: Always 0
+ */
