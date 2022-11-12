@@ -23,3 +23,5 @@ char **get_environ(info_t *info)
  *  Return: 1 on delete, 0 otherwise
  * @var: the string env var property
  */
+int _unsetenv(info_t *info, char *var)
+{
