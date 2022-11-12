@@ -76,6 +76,7 @@ int _mycd(info_t *info)
 	}
 	return (0);
 }
+/**
 	
 	
 	
