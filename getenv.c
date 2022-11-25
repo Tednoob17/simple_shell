@@ -8,14 +8,15 @@
  */
 char **get_environ(info_t *info)
 {
+
 	if (!info->environ || info->env_changed)
 	{
-		info->environ = list_to_strings(info->env);
-		info->env_changed = 0;
+	info->environ = list_to_strings(info->env);
+	info->env_changed = 0;
 	}
-
 	return (info->environ);
 }
+
 /**
  * _unsetenv - Remove an environment variable
  * @info: Structure containing potential arguments. Used to maintain
@@ -35,14 +36,14 @@ char *p;
 	}
 	while (node)
 	{
-			p = starts_with(node->str, var);
-			if (p && *p == '=')
-			{
-				info->env_changed = delete_node_at_index(&(info->env), i);
-				i = 0;
-				node = info->env;
-				continue;
-			}
+		p = starts_with(node->str, var);
+		if (p && *p == '=')
+		{
+			info->env_changed = delete_node_at_index(&(info->env), i);
+			i = 0;
+			node = info->env;
+			continue;
+		}
 		node = node->next;
 		i++;
 	}
