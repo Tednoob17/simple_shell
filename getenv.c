@@ -29,21 +29,21 @@ int _unsetenv(info_t *info, char *var)
 	size_t i = 0;
 	char *p;
 
-	if (!node || !var)
+	if(!node || !var)
 		return (0);
 		while (node)
-	{
-		p = starts_with(node->str, var);
-		if (p && *p == '=')
 		{
-			info->env_changed = delete_node_at_index(&(info->env), i);
-			i = 0;
-			node = info->env;
-			continue;
-		}
+			p = starts_with(node->str, var);
+			if (p && *p == '=')
+			{
+				info->env_changed = delete_node_at_index(&(info->env), i);
+				i = 0;
+				node = info->env;
+				continue;
+			}
 		node = node->next;
 		i++;
-	}
+		}
 	return (info->env_changed);
 }
 
